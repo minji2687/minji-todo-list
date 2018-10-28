@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import url('css/fontello.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700');
+
+*{
+    box-sizing:border-box;
+
+}
+
+a{
+    color:#323232;
+    text-decoration: none;
+}
+
+body{
+   background:linear-gradient(to bottom,rgba(243,243,243,0.3),rgba(244,244,244,1));
+
+   font-size:10px;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+.container{
+
+    max-width:480px;
+    height:80%;
+     min-height:80vh;
+    /* border:1px solid #ddd; */
+    margin:0 auto;
+    padding:4.5%;
+}
+h1{
+    position:relative;
+    color:#F45D4C;
+    font-size:1.1rem;
+    text-shadow:1px 1px 1px rgba(38,25,66,0.1);
+    float:left;
+    /* font-weight:bold; */
+}
+h1::after {
+    position:absolute;
+    top:5px;
+
+    right:-25px;
+    font-family: "fontello";
+    content: ' \e804';
+    animation: heartIcon 1s ease-out alternate infinite;
+ }
+ @keyframes heartIcon{
+    0%{
+        font-size:1.1rem;
+        color:#F45D4C;
+    }
+    70%{
+        color:#2f0c7c;
+    }
+    100%{
+        font-size:1.2rem;
+        color:#2b32ca;
+    }
+ }
+
+ .link-area{
+     float:right;;
+     font-size:1.2rem;
+
+ }
+ .link-area a{
+     color:#261942;
+ }
+
+.input-area{
+    /* background:darkolivegreen; */
+    margin-top:150px;
+}
+/* .add-list{
+    width:100%;
+    height:50px;
+    background:none;
+    border:0;
+    border-bottom:1px solid #281845;
+    background:slateblue;
+    text-align:center;
+}
+ */
+
+.add-list{
+    border:0;
+    background:0;
+    font-size:1.6rem;
+    color:#20133d;
+    margin-left: -14px;
+    transition:color 1.5s;
+}
+.add-list:focus,.add-list:hover{
+    color:#2b32ca;
+}
+
+.todo-list{
+    margin-top:33px;
+
+}
+
+.todo-list li{
+    position:relative;
+    margin-top: 18px;
+    height: 65px;
+    border-radius: 30px;
+    background:#fff;
+    font-size:1.3rem;
+    box-shadow:1px 1px 6px rgba(38,25,66,0.2);
+}
+.todo-item{
+    line-height:65px;
+    padding:0 7px 0 20px;
+    color:#20133d;
+}
+
+
+.icon-minus{
+
+    content: '\e802';
+    background:none;
+    border:none;
+    float:right;
+    line-height:65px;
+    color:#F45D4C;
+}
+.icon-up{
+    content: '\e800';
+    background:none;
+    border:none;
+    float:right;
+    line-height:65px;
+    color:#2b32ca;
+}
+.icon-down{
+    content:'\e801';
+    background:none;
+    border:none;
+    float:right;
+    line-height:65px;
+    color:#2b32ca;
+}
+footer{
+    height:20vh;
+ background:#003562;
+ color:#f4f4f4;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ font-size:1.0rem;
+}
